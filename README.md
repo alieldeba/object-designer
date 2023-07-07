@@ -10,12 +10,13 @@
 ### Examples
 
 ```
+import objectDesigner from "object-designer";
+
 const array1 = ["name", "age"];
 const obj1 = {"name": "John Doe", "age": 30, "email": "johndoe@example.com"};
-const newObj1 = objectDesigner(array1, obj1);
-console.log(newObj1); // { name: "John Doe", age: 30 }
+console.log(objectDesigner(array1, obj1)); // { name: "John Doe", age: 30 }
+
 const array2 = ["age", "name"];
 const obj2 = {"name": "John Doe", "age": 30, "email": "johndoe@example.com"};
-const newObj2 = objectDesigner(array2, obj2);
-console.log(newObj2); // { age: 30, name: "John Doe" }
+console.log(objectDesigner(array2, obj2)); // { age: 30, name: "John Doe" }
 ```
