@@ -3,12 +3,16 @@
  * @return {object}
  * @desc Redesign the object from the given array
  */
-export default function objectDesigner(array, obj) {
+function objectDesigner(array, obj) {
   const sortedObj = {};
-  for (let i = 0, len = array.length; i < len; i++) {
-    if (Object.keys(obj).includes(array[i])) {
-      sortedObj[array[i]] = obj[array[i]];
+
+  for (const key of array) {
+    if (key in obj) {
+      sortedObj[key] = obj[key];
     }
   }
+
   return sortedObj;
 }
+
+module.exports = objectDesigner;

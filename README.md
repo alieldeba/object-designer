@@ -1,6 +1,6 @@
-# <center>Object Designer 😳</center>
+# <h1 align="center">Object Designer (Beta)</h1>
 
-#### <center> This package started in <date>2023/7/7</date> and the author is alieldeba </center>
+#### <h3 align="center"> This package started in <date>2023/7/7</date> and the author is alieldeba </h3>
 
 ### Use Casses
 
@@ -9,13 +9,14 @@
 
 ### Examples
 
-```
-const array1 = ["name", "age"];
-const obj1 = {"name": "John Doe", "age": 30, "email": "johndoe@example.com"};
-const newObj1 = objectDesigner(array1, obj1);
-console.log(newObj1); // { name: "John Doe", age: 30 }
-const array2 = ["age", "name"];
-const obj2 = {"name": "John Doe", "age": 30, "email": "johndoe@example.com"};
-const newObj2 = objectDesigner(array2, obj2);
-console.log(newObj2); // { age: 30, name: "John Doe" }
+```js
+var objectDesigner = require("object-designer");
+
+var array1 = ["name", "age"];
+var obj1 = { name: "John Doe", age: 30, email: "johndoe@example.com" };
+console.log(objectDesigner(array1, obj1)); // { name: "John Doe", age: 30 }
+
+var array2 = ["age", "name"];
+var obj2 = { name: "John Doe", age: 30, email: "johndoe@example.com" };
+console.log(objectDesigner(array2, obj2)); // { age: 30, name: "John Doe" }
 ```

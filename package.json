@@ -1,9 +1,8 @@
 {
   "name": "object-designer",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Simple javascript package that allows you to design your output object as you want",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +15,8 @@
     "redesign"
   ],
   "author": "alieldeba",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "object-designer": "github:alieldeba/object-designer#main"
+  }
 }
