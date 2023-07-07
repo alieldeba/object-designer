@@ -18,5 +18,4 @@ console.log(objectDesigner(array1, obj1)); // { name: "John Doe", age: 30 }
 
 var array2 = ["age", "name"];
 var obj2 = { name: "John Doe", age: 30, email: "johndoe@example.com" };
-console.log(objectDesigner(array2, obj2)); // { age: 30, name: "John Doe" }
 ```
